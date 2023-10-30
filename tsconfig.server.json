@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "alwaysStrict": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "checkJs": true,
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowImportingTsExtensions": false,
+        "incremental": true,
+        "jsx": "react-jsx",
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "strict": true,
+        "outDir": "dist",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "target": "ES2020"
+    },
+    "include": [
+        "./src/server/**/*.(ts|js|json)",
+        "server.ts",
+        "declaration.d.ts",
+    ]
+}

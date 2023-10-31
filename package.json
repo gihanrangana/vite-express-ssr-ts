@@ -1,17 +1,20 @@
 {
-  "name": "vite-ssr-ts",
+  "name": "vite-express-ssr-ts",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch src/server/**/*,server.ts --exec npx ts-node --esm server.ts",
-    "build": "tsc && vite build",
+    "dev": "nodemon --watch server --watch server.ts --exec tsx server.ts",
+    "build": "npm run clean && npm run build:client && npm run build:server",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "build:client": "vite build --outDir dist/src/client",
-    "build:server": "rimraf dist/src/server && tsc -p tsconfig.server.json && vite build --ssr src/entry-server.tsx --outDir dist/src/server"
+    "build:client": "vite build --outDir dist/app/client",
+    "build:server": "tsc -p tsconfig.server.json && vite build --ssr src/entry-server.tsx --outDir dist/entry",
+    "clean": "rimraf dist",
+    "serve": "cross-env NODE_ENV=production node ./dist/app/server"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -35,8 +38,8 @@
     "rimraf": "^5.0.5",
     "serve-static": "^1.15.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5",
-    "vite-plugin-dts": "^3.6.2"
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
   }
 }

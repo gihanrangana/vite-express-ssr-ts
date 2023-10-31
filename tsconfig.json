@@ -1,34 +1,42 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
+    "allowJs": true,
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "jsx": "react-jsxdev",
     "lib": [
-      "ES2020",
       "DOM",
-      "DOM.Iterable"
+      "DOM.Iterable",
+      "ESNext"
     ],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "outDir": "dist",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ES2017"
   },
   "include": [
-    "src/client",
-    "declaration.d.ts"
+    "src/**/*",
+    "types/*",
+    "node_modules/vite/types/*"
+, "server/app.ts"  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "CommonJS"
     }
-  ]
+  }
 }

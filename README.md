@@ -1,27 +1,42 @@
-# React + TypeScript + Vite
+# Express JS + Typescript + Vite Server Side Rendering (SSR)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Vite SSR is a powerful combination of technologies that can help you build fast, scalable, and SEO-friendly web applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Vite is a modern build tool that can significantly improve the performance of your development workflow. It is also well-suited for server-side rendering (SSR), which allows you to generate HTML pages on the server, resulting in faster page load times and better SEO.
 
-## Expanding the ESLint configuration
+Typescript is a superset of JavaScript that adds type safety to your code. This can help you catch errors early and prevent bugs from making it into your production application.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+When combined, Vite SSR gives you a powerful stack for building high-performance, scalable, and SEO-friendly web applications.
 
-- Configure the top-level `parserOptions` property like this:
+SEO benefits of Vite SSR
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+* **Faster page load times**: SSR-generated pages load faster than client-rendered pages, which is important for both user experience and SEO.
+* **Improved SEO**: SSR-generated pages are more indexable and crawlable by search engines, which can lead to improved rankings.
+* **Better code quality**: Typescript can help you write better code by catching errors early and preventing bugs. This can lead to a more reliable and stable application, which can also have a positive impact on SEO.
+
+Overall, Vite SSR is a great choice for building fast, scalable, and SEO-friendly web applications.
+
+Just clone and run the following commands:
+
+Using yarn
+```
+yarn install
+yarn dev // for development mode
+yarn build // for production build
+yarn serve // serve the production server
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Using npm
+```
+npm install
+npm run dev // for development mode
+npm run build // for production build
+npm run serve // serve the production server
+```
+
+After starting the application you can use the following routes:
+
+`http://localhost:3000` - This will render the react application
+
+`http://localhost:3000/api` - This will return your api routes, all api routes will be returned under the `/api` endpoint, to config api routes see the `server/app.ts`

@@ -6,8 +6,8 @@
       "command": "yarn install"
     },
     {
-      "command": "yarn build",
-      "name": "Build"
+      "name": "Build",
+      "command": "yarn build"
     }
   ],
 
@@ -20,38 +20,31 @@
     },
     "build": {
       "name": "build",
-      "command": "yarn build",
-      "runAtStart": false
+      "command": "yarn build"
     },
     "lint": {
       "name": "lint",
-      "command": "yarn lint",
-      "runAtStart": false
+      "command": "yarn lint"
     },
     "preview": {
       "name": "preview",
-      "command": "yarn preview",
-      "runAtStart": false
+      "command": "yarn preview"
     },
     "build:client": {
       "name": "build:client",
-      "command": "yarn build:client",
-      "runAtStart": false
+      "command": "yarn build:client"
     },
     "build:server": {
       "name": "build:server",
-      "command": "yarn build:server",
-      "runAtStart": false
+      "command": "yarn build:server"
     },
     "clean": {
       "name": "clean",
-      "command": "yarn clean",
-      "runAtStart": false
+      "command": "yarn clean"
     },
     "serve": {
       "name": "serve",
-      "command": "yarn serve",
-      "runAtStart": false
+      "command": "yarn serve"
     }
   }
 }

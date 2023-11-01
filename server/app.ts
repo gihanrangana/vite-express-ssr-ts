@@ -1,7 +1,7 @@
-import express from 'express';
+import express, { Router } from 'express';
 class App {
 
-    public router = express.Router();
+    public router: Router = express.Router();
 
     constructor() {
         this.router.get('/', (req, res) => {

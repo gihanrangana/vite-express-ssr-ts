@@ -17,7 +17,12 @@ SEO benefits of Vite SSR
 
 Overall, Vite SSR is a great choice for building fast, scalable, and SEO-friendly web applications.
 
-Just clone and run the following commands:
+To create project with this template:
+1. Click `Use this template` button to create a repo with this template
+2. Use `degit` to clone this repo with this command `npx degit gihanrangana/vite-express-ssr-ts <project-name>`
+3. Just clone repo by url using cli or Github Desktop app
+
+To run this project
 
 Using yarn
 ```

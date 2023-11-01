@@ -1,0 +1,50 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    },
+    {
+      "name": "Build",
+      "command": "yarn build"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "dev": {
+      "name": "dev",
+      "command": "yarn dev",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build"
+    },
+    "lint": {
+      "name": "lint",
+      "command": "yarn lint"
+    },
+    "preview": {
+      "name": "preview",
+      "command": "yarn preview"
+    },
+    "build:client": {
+      "name": "build:client",
+      "command": "yarn build:client"
+    },
+    "build:server": {
+      "name": "build:server",
+      "command": "yarn build:server"
+    },
+    "clean": {
+      "name": "clean",
+      "command": "yarn clean"
+    },
+    "serve": {
+      "name": "serve",
+      "command": "yarn serve"
+    }
+  }
+}

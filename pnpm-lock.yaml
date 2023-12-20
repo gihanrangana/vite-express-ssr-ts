@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@types/serve-static':
-    specifier: ^1.15.4
-    version: 1.15.4
+    specifier: ^1.15.5
+    version: 1.15.5
   cross-env:
     specifier: ^7.0.3
     version: 7.0.3
@@ -740,7 +740,7 @@ packages:
       '@types/body-parser': 1.19.4
       '@types/express-serve-static-core': 4.17.39
       '@types/qs': 6.9.9
-      '@types/serve-static': 1.15.4
+      '@types/serve-static': 1.15.5
     dev: true
 
   /@types/history@4.7.11:
@@ -822,8 +822,8 @@ packages:
       '@types/node': 20.8.10
     dev: true
 
-  /@types/serve-static@1.15.4:
-    resolution: {integrity: sha512-aqqNfs1XTF0HDrFdlY//+SGUxmdSUbjeRXb5iaZc3x0/vMbYmdw9qvOgHWOyyLFxSSRnUuP5+724zBgfw8/WAw==}
+  /@types/serve-static@1.15.5:
+    resolution: {integrity: sha512-PDRk21MnK70hja/YF8AHfC7yIsiQHn1rcXx7ijCFBX/k+XQJhQT/gw3xekXKJvx+5SXaMMS8oqQy09Mzvz2TuQ==}
     dependencies:
       '@types/http-errors': 2.0.3
       '@types/mime': 3.0.3

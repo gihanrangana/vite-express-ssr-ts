@@ -35,7 +35,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "nodemon": "^3.0.1",
+    "nodemon": "^3.0.2",
     "rimraf": "^5.0.5",
     "serve-static": "^1.15.0",
     "ts-node": "^10.9.1",

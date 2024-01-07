@@ -21,8 +21,8 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-router-dom:
-    specifier: ^6.17.0
-    version: 6.18.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^6.21.1
+    version: 6.21.1(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
   '@types/compression':
@@ -678,8 +678,8 @@ packages:
     dev: true
     optional: true
 
-  /@remix-run/router@1.11.0:
-    resolution: {integrity: sha512-BHdhcWgeiudl91HvVa2wxqZjSHbheSgIiDvxrF1VjFzBzpTtuDPkOdOi3Iqvc08kXtFkLjhbS+ML9aM8mJS+wQ==}
+  /@remix-run/router@1.14.1:
+    resolution: {integrity: sha512-Qg4DMQsfPNAs88rb2xkdk03N3bjK4jgX5fR24eHCTR9q6PrhZQZ4UJBPzCHJkIpTRN1UKxx2DzjZmnC+7Lj0Ow==}
     engines: {node: '>=14.0.0'}
     dev: false
 
@@ -2311,26 +2311,26 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom@6.18.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Ubrue4+Ercc/BoDkFQfc6og5zRQ4A8YxSO3Knsne+eRbZ+IepAsK249XBH/XaFuOYOYr3L3r13CXTLvYt5JDjw==}
+  /react-router-dom@6.21.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-QCNrtjtDPwHDO+AO21MJd7yIcr41UetYt5jzaB9Y1UYaPTCnVuJq6S748g1dE11OQlCFIQg+RtAA1SEZIyiBeA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.11.0
+      '@remix-run/router': 1.14.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      react-router: 6.18.0(react@18.2.0)
+      react-router: 6.21.1(react@18.2.0)
     dev: false
 
-  /react-router@6.18.0(react@18.2.0):
-    resolution: {integrity: sha512-vk2y7Dsy8wI02eRRaRmOs9g2o+aE72YCx5q9VasT1N9v+lrdB79tIqrjMfByHiY5+6aYkH2rUa5X839nwWGPDg==}
+  /react-router@6.21.1(react@18.2.0):
+    resolution: {integrity: sha512-W0l13YlMTm1YrpVIOpjCADJqEUpz1vm+CMo47RuFX4Ftegwm6KOYsL5G3eiE52jnJpKvzm6uB/vTKTPKM8dmkA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.11.0
+      '@remix-run/router': 1.14.1
       react: 18.2.0
     dev: false
 

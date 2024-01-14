@@ -21,7 +21,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "skipLibCheck": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "target": "ESNext"
   },
   "include": [
@@ -31,7 +31,7 @@
   ],
   "exclude": [
     "dist",
-    "src//*.tsx"
+    "src/**/*.tsx"
   ],
   "ts-node": {
     "transpileOnly": true,

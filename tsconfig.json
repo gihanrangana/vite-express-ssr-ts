@@ -22,13 +22,52 @@
     "moduleResolution": "Node",
     "skipLibCheck": true,
     "sourceMap": true,
-    "target": "ES2017"
+    "target": "ES2017",
+    "paths": {
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@core/*": [
+        "./src/core/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "@screens/*": [
+        "./src/screens/*"
+      ],
+      "@server/*": [
+        "./server"
+      ],
+      "@public/*": [
+        "./public"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@types/*": [
+        "./types/*"
+      ],
+      "@loaders/*": [
+        "./src/loaders/*"
+      ],
+      "@client/*": [
+        "./src/*"
+      ],
+    }
   },
   "include": [
     "src/**/*",
     "types/*",
-    "node_modules/vite/types/*"
-, "server/app.ts"  ],
+    "node_modules/vite/types/*",
+    "server/app.ts"
+  ],
   "exclude": [
     "node_modules",
     "dist"

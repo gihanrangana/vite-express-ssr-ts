@@ -74,11 +74,22 @@ const createServer = async () => {
             }
 
             const context: any = {};
-            const appHtml = render(url, context)
-
+            const appHtml = await render(req)
+            const { helmet } = appHtml;
+            
             if (context.url) return res.redirect(301, context.url);
 
-            const html = template.replace('<!--app-html-->', appHtml.html)
+            let html = template.replace('<!--app-html-->', appHtml.html)
+            
+            const helmetData = `
+                ${helmet.title.toString()}
+                ${helmet.meta.toString()}
+                ${helmet.link.toString()}
+                ${helmet.style.toString()}
+            `
+            
+            html = html.replace('<!--app-head-->', helmetData)
+            html = html.replace('<!--app-scripts-->', helmet.script.toString())
 
             res.status(200).set({ "Content-Type": "text/html" }).end(html)
 

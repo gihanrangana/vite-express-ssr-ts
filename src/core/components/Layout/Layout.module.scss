@@ -1,0 +1,36 @@
+.navWrapper {
+    background-color: $buttonBg;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 12px $buttonBg;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+
+        a {
+            padding: 10px 0;
+            font-size: 18px;
+            color: $defaultTextLight;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        :global {
+            a.active {
+                color: $primary;
+            }
+        }
+    }
+
+}

@@ -1,17 +1,20 @@
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, RouterProvider, createBrowserRouter, matchRoutes } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import App from './App'
-import './index.css'
+import routes from '@core/routes'
 
-// ReactDOM.createRoot(document.getElementById('app')!).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )
+import '@assets/styles/index.scss'
+
+const router = createBrowserRouter(routes);
+
+const context = {}
 
 ReactDOM.hydrateRoot(
-  document.getElementById("app") as HTMLElement,
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+	document.getElementById("app") as HTMLElement,
+	<HelmetProvider context={context}>
+		<App>
+			<RouterProvider router={router} fallbackElement={null} />
+		</App>
+	</HelmetProvider>
 )

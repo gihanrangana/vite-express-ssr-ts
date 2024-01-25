@@ -51,5 +51,22 @@
     "node": ">=18",
     "pnpm": ">=8",
     "npm": ">=9"
-  }
+  },
+  "keywords": [
+    "Express.js TypeScript SSR",
+    "Vite SSR Template",
+    "Server-Side Rendering with Vite and Express",
+    "TypeScript SSR Framework",
+    "Vite Express.js Boilerplate",
+    "Node.js TypeScript Vite Starter",
+    "Express Vite Server Rendering",
+    "TypeScript Vite SSR Example",
+    "Full-Stack JavaScript SSR",
+    "SEO-Friendly SSR Template",
+    "Modern Web App SSR Vite",
+    "Isomorphic JavaScript Vite Express",
+    "Express.js Vite TypeScript Setup",
+    "SSR Web Application with TypeScript",
+    "High-Performance SSR with Vite"
+  ]
 }

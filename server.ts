@@ -2,8 +2,11 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import express from 'express';
+import dotenv from 'dotenv'
+
 import api from './server/app.js';
 
+dotenv.config()
 const __dirname: string = path.dirname(fileURLToPath(import.meta.url));
 const isTest = process.env.VITEST;
 const isProd = process.env.NODE_ENV === 'production'
@@ -76,18 +79,18 @@ const createServer = async () => {
             const context: any = {};
             const appHtml = await render(req)
             const { helmet } = appHtml;
-            
+
             if (context.url) return res.redirect(301, context.url);
 
             let html = template.replace('<!--app-html-->', appHtml.html)
-            
+
             const helmetData = `
                 ${helmet.title.toString()}
                 ${helmet.meta.toString()}
                 ${helmet.link.toString()}
                 ${helmet.style.toString()}
             `
-            
+
             html = html.replace('<!--app-head-->', helmetData)
             html = html.replace('<!--app-scripts-->', helmet.script.toString())
 

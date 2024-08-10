@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@loadable/component": "^5.16.3",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

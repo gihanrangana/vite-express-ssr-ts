@@ -14,39 +14,39 @@
     "serve": "cross-env NODE_ENV=production node ./dist/app/server"
   },
   "dependencies": {
-    "@loadable/component": "^5.16.3",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet-async": "^2.0.4",
-    "react-router-dom": "^6.22.3"
+    "@loadable/component": "^5.16.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.1.3"
   },
   "devDependencies": {
     "@types/compression": "^1.7.5",
-    "@types/express": "^4.17.21",
+    "@types/express": "^5.0.0",
     "@types/loadable__component": "^5.13.9",
-    "@types/node": "^22.2.0",
-    "@types/react": "^18.2.74",
-    "@types/react-dom": "^18.2.24",
+    "@types/node": "^22.10.10",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
     "@types/react-router-dom": "^5.3.3",
     "@types/serve-static": "^1.15.7",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "@typescript-eslint/parser": "^7.5.0",
-    "@vitejs/plugin-react": "^4.2.1",
-    "compression": "^1.7.4",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "compression": "^1.7.5",
     "cross-env": "^7.0.3",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "nodemon": "^3.1.0",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "nodemon": "^3.1.9",
     "rimraf": "^6.0.1",
-    "sass": "^1.74.1",
-    "serve-static": "^1.15.0",
+    "sass": "^1.83.4",
+    "serve-static": "^1.16.2",
     "ts-node": "^10.9.2",
-    "tsx": "^4.7.2",
-    "typescript": "^5.4.4",
-    "vite": "^5.2.8"
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11"
   },
   "engines": {
     "node": ">=18",
@@ -70,5 +70,5 @@
     "SSR Web Application with TypeScript",
     "High-Performance SSR with Vite"
   ],
-  "packageManager": "pnpm@8.15.6+sha256.01c01eeb990e379b31ef19c03e9d06a14afa5250b82e81303f88721c99ff2e6f"
+  "packageManager": "pnpm@9.15.4+sha256.9bee59c7313a216722c079c1e22160dea7f88df4e0c3450b1d7b01b882336c6a"
 }

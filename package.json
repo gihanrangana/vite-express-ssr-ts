@@ -70,5 +70,5 @@
     "SSR Web Application with TypeScript",
     "High-Performance SSR with Vite"
   ],
-  "packageManager": "pnpm@9.15.4+sha256.9bee59c7313a216722c079c1e22160dea7f88df4e0c3450b1d7b01b882336c6a"
+  "packageManager": "pnpm@10.6.1+sha256.81204845a396962a9c4b49cc2d6cafbb49a758652d3c243f2128cbc638084fe2"
 }

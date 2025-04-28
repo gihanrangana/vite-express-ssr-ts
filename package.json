@@ -42,7 +42,7 @@
     "nodemon": "^3.1.9",
     "rimraf": "^6.0.1",
     "sass": "^1.83.4",
-    "serve-static": "^1.16.2",
+    "serve-static": "^2.2.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",

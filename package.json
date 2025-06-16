@@ -26,7 +26,7 @@
     "@types/compression": "^1.7.5",
     "@types/express": "^5.0.0",
     "@types/loadable__component": "^5.13.9",
-    "@types/node": "^22.10.10",
+    "@types/node": "^24.0.3",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@types/react-router-dom": "^5.3.3",

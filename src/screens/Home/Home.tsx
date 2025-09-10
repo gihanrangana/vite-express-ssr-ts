@@ -6,11 +6,10 @@ import useHelmet from '@hooks/useHelmet';
 
 import styles from './Home.module.scss'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const Home: React.FC<HomeProps> = (_props) => {
+const Home: React.FC = () => {
 
     const [count, setCount] = useState(0)
-    const data = useLoaderData()
+    useLoaderData()
 
     const helmet = useHelmet()
 
@@ -42,10 +41,6 @@ const Home: React.FC<HomeProps> = (_props) => {
             </p>
         </>
     )
-}
-
-interface HomeProps {
-    [key: string]: any
 }
 
 export default Home;

@@ -1,4 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
 import type { RouteObject } from "react-router-dom";
 import loadable from '@loadable/component'
 

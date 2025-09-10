@@ -11,6 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
     "jsx": "react-jsxdev",
+      "types": ["vitest/globals"],
     "lib": [
       "DOM",
       "DOM.Iterable",

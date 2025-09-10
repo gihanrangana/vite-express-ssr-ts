@@ -2,7 +2,7 @@ import useHelmet from '@hooks/useHelmet';
 import React, { useEffect } from 'react';
 
 
-const Contact: React.FC<ContactProps> = (props) => {
+const Contact: React.FC = () => {
 
     const helmet = useHelmet()
 
@@ -15,10 +15,6 @@ const Contact: React.FC<ContactProps> = (props) => {
             <h1>Contact Page</h1>
         </>
     )
-}
-
-interface ContactProps {
-    [key: string]: any
 }
 
 export default Contact

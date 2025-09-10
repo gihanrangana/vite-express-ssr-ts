@@ -1,7 +1,7 @@
 import useHelmet from '@hooks/useHelmet';
 import React, { useEffect } from 'react';
 
-const About: React.FC<AboutProps> = (props) => {
+const About: React.FC = () => {
 
     const helmet = useHelmet()
     
@@ -14,10 +14,6 @@ const About: React.FC<AboutProps> = (props) => {
             <h1>About Us</h1>
         </>
     )
-}
-
-interface AboutProps {
-    [key: string]: any
 }
 
 export default About;

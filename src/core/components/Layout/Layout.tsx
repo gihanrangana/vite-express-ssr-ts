@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import styles from './Layout.module.scss'
 
-const Layout: React.FC<LayoutProps> = (props) => {
+const Layout: React.FC = () => {
 
     return (
         <>
@@ -25,10 +25,6 @@ const Layout: React.FC<LayoutProps> = (props) => {
             <Outlet />
         </>
     )
-}
-
-interface LayoutProps {
-    [key: string]: any
 }
 
 export default Layout;

@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const helmetContext = React.createContext({});
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const helmetContext = React.createContext<any>({});
 
-const HelmetProvider = (props: any) => {
+const HelmetProvider = (props: React.PropsWithChildren) => {
     const [title, setTitle] = useState('Hello');
-    const [meta, setMeta] = useState([]);
-    const [link, setLink] = useState([]);
-    const [script, setScript] = useState([]);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [meta, setMeta] = useState<any[]>([]);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [link, setLink] = useState<any[]>([]);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [script, setScript] = useState<any[]>([]);
     const [style, setStyle] = useState<string | []>('');
 
     return (
@@ -15,11 +19,15 @@ const HelmetProvider = (props: any) => {
             value={{ title, setTitle, meta, setMeta, link, setLink, script, setScript, style, setStyle }}>
             <Helmet>
                 {title && <title>{title}</title>}
-                {meta && meta.map((m: any) => <meta {...m} />)}
-                {link && link.map((l: any) => <link {...l} />)}
-                {script && script.map((s: any) => <script {...s} />)}
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                {meta && meta.map((m: any, i: number) => <meta key={i} {...m} />)}
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                {link && link.map((l: any, i: number) => <link key={i} {...l} />)}
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                {script && script.map((s: any, i: number) => <script key={i} {...s} />)}
                 {style && typeof style === 'string' && <style>{style}</style>}
-                {style && Array.isArray(style) && style.map((s: any) => <style>{s}</style>)}
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                {style && Array.isArray(style) && style.map((s: any, i: number) => <style key={i}>{s}</style>)}
             </Helmet>
 
             {props.children}
